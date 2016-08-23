@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/chat_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/chat_background_round_rect">
+
+        <TextView
+            android:id="@+id/chat_bubble_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/chat_bubble_profile"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:actualImageScaleType="fitCenter"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImageScaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/chat_bubble_user"
+                android:gravity="bottom|end"
+                android:layout_gravity="bottom|end"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                />
+
+            <TextView
+            android:id="@+id/chat_bubble_time"
+            android:gravity="bottom|end"
+            android:layout_gravity="bottom|end"
+            android:lines="1"
+            android:paddingLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

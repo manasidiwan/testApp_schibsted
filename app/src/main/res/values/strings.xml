@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ChatBot</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">First Name &amp; Last Name</string>
+    <string name="action_sign_in">Login</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_name">This field is not valid</string>
+    <string name="send">SEND</string>
+    <string name="type_something">Type Something</string>
+    <!-- Errors -->
+    <string name="error_first_last_only">Please enter in the FirstName LastName format</string>
+    <string name="error_wrong_characters">Names can only have alphabets</string>
+    <string name="prompt_name1">First Name &amp; Last Name</string>
+
+
+</resources>
